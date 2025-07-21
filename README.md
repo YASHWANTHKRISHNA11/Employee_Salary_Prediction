@@ -68,6 +68,13 @@ This project predicts employee salaries using machine learning techniques on cen
 2. Enter employee details in the form.
 3. Submit to get the predicted salary.
 
+## Image
+    Input Page:
+        <img width="1918" height="925" alt="image" src="https://github.com/user-attachments/assets/650c8d88-f12b-443f-8e40-980879de7f60" />
+        
+    Output Page:
+        <img width="1917" height="925" alt="image" src="https://github.com/user-attachments/assets/8dd5f7e7-30d9-43d8-9552-afb6816cc35b" />
+
 ## License
 
 This project is for educational purposes.
