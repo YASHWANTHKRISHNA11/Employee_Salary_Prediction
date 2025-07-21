@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Salary Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Salary Predictor</h1>
+        <form action="/predict" method="post">
+            <div class="form-grid">
+
+                <input type="number" name="age" placeholder="Age" required>
+                <input type="number" name="fnlwgt" placeholder="FNLWGT" required>
+                <input type="number" name="educational_num" placeholder="Educational Num" required>
+                <input type="number" name="capital_gain" placeholder="Capital Gain" required>
+                <input type="number" name="capital_loss" placeholder="Capital Loss" required>
+                <input type="number" name="hours_per_week" placeholder="Hours per Week" required>
+
+                <!-- Dropdowns for categorical fields -->
+                <select name="workclass" required>
+                    <option value="" disabled selected>Select Workclass</option>
+                    <option value="0">Federal-gov</option>
+                    <option value="1">Local-gov</option>
+                    <option value="2">Private</option>
+                    <option value="3">Self-emp-inc</option>
+                    <option value="4">Self-emp-not-inc</option>
+                    <option value="5">State-gov</option>
+                    <option value="6">Without-pay</option>
+                </select>
+
+                <select name="education" required>
+                    <option value="" disabled selected>Select Education</option>
+                    <option value="0">HS-grad</option>
+                    <option value="1">Bachelors</option>
+                    <option value="2">Masters</option>
+                    <option value="3">Some-college</option>
+                    <!-- Add more as per label encoding -->
+                </select>
+
+                <select name="marital_status" required>
+                    <option value="" disabled selected>Select Marital Status</option>
+                    <option value="0">Married</option>
+                    <option value="1">Single</option>
+                    <option value="2">Divorced</option>
+                    <!-- Add more as per your encoding -->
+                </select>
+
+                <select name="occupation" required>
+                    <option value="" disabled selected>Select Occupation</option>
+                    <option value="0">Tech-support</option>
+                    <option value="1">Craft-repair</option>
+                    <option value="2">Other-service</option>
+                    <!-- Add more -->
+                </select>
+
+                <select name="relationship" required>
+                    <option value="" disabled selected>Select Relationship</option>
+                    <option value="0">Husband</option>
+                    <option value="1">Not-in-family</option>
+                    <option value="2">Own-child</option>
+                    <!-- Add more -->
+                </select>
+
+                <select name="race" required>
+                    <option value="" disabled selected>Select Race</option>
+                    <option value="0">White</option>
+                    <option value="1">Black</option>
+                    <option value="2">Asian-Pac-Islander</option>
+                    <!-- Add more -->
+                </select>
+
+                <select name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+
+                <select name="native_country" required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="0">United-States</option>
+                    <option value="1">India</option>
+                    <option value="2">Mexico</option>
+                    <!-- Add more -->
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Predict Salary</button>
+        </form>
+    </div>
+</body>
+</html>

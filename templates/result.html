@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <h1>Prediction Result</h1>
+        <p style="font-size: 24px; color: #0056b3;">
+            Predicted Salary: <strong>₹{{ prediction }}</strong>
+        </p>
+        <a href="/" class="btn">Predict Another</a>
+    </div>
+</body>
+</html>
