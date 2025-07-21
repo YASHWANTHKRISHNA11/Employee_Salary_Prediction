@@ -73,14 +73,12 @@ This project predicts employee salaries using machine learning techniques on cen
 ## Screenshots
 
 **Input Page:**  
+
 ![Input Page](screenshots/input_page.png)
 
 **Output Page:**  
+
 ![Output Page](screenshots/output_page.png)
-
-## License
-
-This project is for educational purposes.
 
 ## License
 
